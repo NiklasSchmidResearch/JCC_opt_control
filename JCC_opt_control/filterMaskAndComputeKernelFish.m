@@ -61,7 +61,6 @@ for i_x=1:Mx   % For all x positions
             % Put transition probabilities in transition matrix
             T_u(idx_i,idx_j,u) = T_u(idx_i,idx_j,u) + 1/Md;
     
-            % Stage cost is quadratic. Zero in the middle.
             stage_cost(idx_i,u) = - C;
             terminal_cost(idx_i) = 0;
         end

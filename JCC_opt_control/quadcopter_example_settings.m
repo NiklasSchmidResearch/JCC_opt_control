@@ -2,10 +2,8 @@
 
 % Settings of simulation
 disp("Setting parameters.")
-%discrete_states_per_dimension = [50,50]; % 50 x 50 discretization in the x- and y-direction
-%discrete_actions_per_dimension = [8]; % 8 inputs as discretization of U
-Mx=50; My=50;                                                                               % REMOVE 
-Mu = 8; % Discretization of the input set                                                   % REMOVE
+Mx=50; My=50;                                                                              
+Mu = 8; % Discretization of the input set                                                   
 Max_Iterations_Ono = 30;  % For the approach in Ono we set some high number on the maximum iterations
 scenario = 2;       % Simulated scenario (see quadcopter_example.m)
 Delta = 10e-6; % Maximum suboptimality

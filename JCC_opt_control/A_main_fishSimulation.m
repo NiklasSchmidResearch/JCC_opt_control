@@ -293,6 +293,7 @@ colorrangeOne = ones(size(colorrange))*1;
 mycolors = [colorrangeZero flip(colorrange) colorrange ; colorrange colorrangeZero flip(colorrange)];
 mycolors = flip([colorrangeOne colorrange colorrange; flip(colorrange) flip(colorrange) colorrangeOne ]);
 mycolors = flip([colorrangeOne*0, flip(colorrange)*1 + 0, colorrangeOne*0 ]);
+mycolors = flip([flip(colorrange)*1, flip(colorrange)*.5 + 0.5, flip(colorrange)*1 ]);
 %mycolors = [colorrange colorrange flip(colorrange); colorrangeOne flip(colorrange) colorrangeZero];
 %mycolors = [flip(colorrange) flip(colorrange) flip(colorrange)];
 figure(33)

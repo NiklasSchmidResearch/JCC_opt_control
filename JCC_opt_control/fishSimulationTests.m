@@ -1,8 +1,7 @@
-
-
 clear all
 close all
 
+% This file was used to analyse the fish model
 x = zeros(100,1);
 L=40;
 r=1;
