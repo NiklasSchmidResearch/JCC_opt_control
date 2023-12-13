@@ -153,9 +153,10 @@ for iterations=1:Max_Iterations_Ono
     end
 
     % Do bisection. In Ono this would have been done using the risk R, not
-    % the true safety V. We instead compute the actual safety here because
-    % scenario 1 becomes infeasible using the risk bound.
-    if R_ono(x_0_idx,1)>1-p_s
+    % the true safety V. We instead compute the actual safety here to
+    % restrict our comparison to the DP recursions.
+    %if R_ono(x_0_idx,1)>1-p_s % <- Use this conidition to be in line with Ono 
+    if V_ono(x_0_idx,1)<p_s
         lambda_low = lambda
         lambda = 1/2*(lambda_low + lambda_up);
     else
